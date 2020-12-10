@@ -1,0 +1,247 @@
+html,body{
+    background: #000;
+    background-image:url("../img/Фоновые элементы.png");
+    color:white;
+}
+header ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style-type:none;
+    margin-top: 3%;
+}
+header ul img{
+    margin-top: -2% ;
+}
+header a, header a:hover{
+    color:white;
+    text-decoration: none;
+}
+header .carousel{
+    widows: 100%;
+}
+header .carousel .img{
+    width: 100% !important;
+    height: 90vh !important;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style-type: none;
+    margin-top: 10%;
+    line-height: 30px;
+}
+li{
+    cursor: pointer;
+    padding: 0;
+}
+#menu{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 5px 0;
+}
+.b{
+    margin-top: -1%;
+    font-size: 50px;
+}
+#new{
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+}
+.cardFLex{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.cardFLex .cards{
+    width: 20rem;
+    margin-top: 8%;
+}
+.cardFLex .cards img{
+    width: 100%;
+}
+.cardFLex .Num{
+    padding: 0 12%;
+}
+ .cardFLex button{
+    background:none;
+    color:white;
+    border: 1px solid white;
+    padding: 1% 5%;
+}
+.cardFLex button:active{
+    background:green;
+}
+.our{
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    margin-top: 5%;
+}
+.our img{
+    width: 90%;
+}
+.text{
+    width: 100%;
+}
+section #b{
+    margin-top: 2%;
+    font-size: 50px;
+}
+.sliderNews{
+    width: 100%;
+    margin-top: 10%;
+}
+.loading{
+    margin:10% 40% 0% 40%;
+    background: none;
+    color: white;
+    border:1px solid white;
+    padding: 2vh 2em;
+}
+.loading:active{
+    background:white;
+    color: black;
+}
+.card_stock{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin-top: 5%;
+}
+.card_stock img{
+    width: 80%;
+}
+.price{
+    display:grid;
+    grid-template-columns: 2fr 10fr;
+    margin-top: 10%;
+}
+.card_stock p {
+    font-size: 20px;
+    max-height: 12%;
+}
+.card_stock .sall{
+    color: red;
+    text-decoration: line-through;
+}
+.card_stock .onSall{
+    color:green;
+}
+.card_stock button{
+    padding: 2% 5%;
+    background: none;
+    color:white;
+    margin-top: 9%;
+    border: 1px solid white;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+.contact h4{
+    margin-top: 15%;
+}
+.allBlock{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7%;
+}
+/*karzina*/
+.block-card{
+    width:70%;
+    height: 30vh;
+    margin-top: 5%;
+    position: relative;
+}
+.block-card img{
+    width: 40%;
+}
+.block-card-info{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 10%;
+    position: absolute;
+    top:20%;
+    left: 50%;
+}
+.foot{
+    position: absolute;
+    top:0;
+    left:50%;
+}
+.summa{
+    margin-top:10%;
+}
+.checkout{
+    padding: 10px 30px;
+    background: none;
+    color:white;
+    margin-top: 5%;
+    border: 1px solid white;
+}
+.checkout:hover{
+    background-color: white;
+    color:black;
+}
+/* Модальное окно */
+.modalWindow{
+    width: 80%;
+    color: black;
+    margin: 0 auto;
+    background: #fff;
+}
+.window_cont{
+    width: 60%;
+    margin-left: 5%;
+}
+.modalWindow h2{
+    text-align: center;
+}
+.modalWindow .input{
+    width: 100%;
+    line-height: 40px;
+    padding: 0px 10px;
+}
+.modalWindow p{
+    margin-top:3%;
+    margin-bottom: 0;
+}
+.modalWindow .checkbox{
+    margin-top:3%;
+    margin-left: 2%;
+}
+.modalWindow_adress{
+    display: flex;
+    justify-content: space-between;
+
+}
+.modalWindow .adress{
+    width: 100%;
+}
+.modalWindow .house{
+    width:100%;
+}
+footer{
+    margin-top: 15%;
+}
+footer img{
+    width: 20%;
+    margin-bottom: 5%;
+    margin-top: -5%;
+}
+footer .FooterFlex{
+    display: flex;
+    justify-content:space-between;
+    width:100%;
+}
+footer .iconMessenger {
+    width: 35px;
+}
+footer .iconMessenger img{
+    width: 100%;
+    margin: 23% 0;    
+    cursor: pointer;
+}
