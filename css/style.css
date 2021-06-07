@@ -3,6 +3,9 @@ html,body{
     background-image:url("../img/Фоновые элементы.png");
     color:white;
 }
+section{
+    margin: 2% 0;
+}
 header ul {
     display: flex;
     justify-content: space-around;
@@ -36,13 +39,66 @@ li{
     cursor: pointer;
     padding: 0;
 }
+
+#enscart_my_wrapper {
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    z-index: 1140;
+}
+  #enscart_myimage_wrapper {
+    cursor: pointer;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.4);
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    z-index: 1140;
+}
+  #enscart_my_wrapper img {
+    height: 80%;
+    width: auto;
+    padding-top: 8px;
+}
+  #enscart_my_counter_wrapper {
+    cursor: pointer;
+    min-width: 30px;
+    height: 30px;
+    background-color: #d62240;
+    color: #fff;
+    border-radius: 30px;
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    text-align: center;
+    line-height: 30px;
+    font-family: Arial,sans-serif;
+    margin: 0px 3px;
+    z-index: 1150;
+}
+#easynetshop-cart {
+    border: none;
+    background-color: transparent;
+}
+
 #menu{
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     padding: 5px 0;
 }
-.b{
-    margin-top: -1%;
+#contact{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 5px 0;
+}
+#stock{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 5px 0;
+}
+b{
+    margin-top: 5%;
     font-size: 50px;
 }
 #new{
@@ -62,6 +118,7 @@ li{
 }
 .cardFLex .cards img{
     width: 100%;
+    height: 220px;
 }
 .cardFLex .Num{
     padding: 0 12%;
@@ -93,6 +150,10 @@ section #b{
 .sliderNews{
     width: 100%;
     margin-top: 10%;
+}
+.menuP{
+    height: 50px;
+    overflow-y:auto;
 }
 .loading{
     margin:10% 40% 0% 40%;
@@ -148,6 +209,7 @@ section #b{
     justify-content: space-between;
     margin-top: 7%;
 }
+
 /*karzina*/
 .block-card{
     width:70%;
@@ -186,43 +248,39 @@ section #b{
     background-color: white;
     color:black;
 }
-/* Модальное окно */
-.modalWindow{
-    width: 80%;
-    color: black;
-    margin: 0 auto;
-    background: #fff;
+#oform{
+    margin-top: 5%;
+    padding: 15px 20px;
+    border: 1px solid black;
 }
-.window_cont{
-    width: 60%;
-    margin-left: 5%;
+.count{
+    width: 30%;
 }
-.modalWindow h2{
-    text-align: center;
-}
-.modalWindow .input{
-    width: 100%;
-    line-height: 40px;
-    padding: 0px 10px;
-}
-.modalWindow p{
-    margin-top:3%;
-    margin-bottom: 0;
-}
-.modalWindow .checkbox{
-    margin-top:3%;
-    margin-left: 2%;
-}
-.modalWindow_adress{
+.count_wr{
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
+    margin-top:10%;
+    
 }
-.modalWindow .adress{
-    width: 100%;
+.count_wr span{
+    color:white;
+    font-size: 20px;
 }
-.modalWindow .house{
-    width:100%;
+.count_btn{
+    color:white;
+    background: none;
+    border: none;
+}
+.count_value{
+    background: none;
+    color:white;
+    width: 30px;
+    border: none;
+}
+#map{
+    width:700px;
+    height: 500px;
 }
 footer{
     margin-top: 15%;
@@ -244,4 +302,62 @@ footer .iconMessenger img{
     width: 100%;
     margin: 23% 0;    
     cursor: pointer;
+}
+
+@media (max-width: 575.98px) {
+    footer .FooterFlex{
+        display: block;
+        width: 100%;
+        font-size: 20px;
+    }
+    .sectionMenu{
+        display: none;
+    }
+    footer .iconMessenger {
+        width: 100%;
+    }
+    footer .iconMessenger img{
+        width: 10%;
+        margin: 0% 0;    
+        cursor: pointer;
+    }
+}
+@media (max-width: 767.98px) {
+    .our{
+        display: block;
+    }
+    .our img{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .sectionMenu{
+        display: none;
+    }
+    footer .FooterFlex{
+        display: block;
+    }
+
+    
+}
+@media (max-width: 991.98px) {
+    .our{
+        display: block;
+    }
+    .our img{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .price{
+        display:grid;
+        grid-template-columns: 5fr 9fr;
+        margin-top: 15%;
+    }
+    .card_stock p {
+        font-size: 15px;
+        max-height: 12%;
+    }
+    #map{
+        width:500px;
+        height: 500px;
+    }
 }

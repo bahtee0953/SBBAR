@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="./img/log.png" type="image/x-icon">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<!--Готовый скрипт корзины-->
+<script defer src="https://lk.easynetshop.ru/frontend/v5/ens-c72adf1c.js"></script>
+
+<!--Стили элементов для корзины-->
+<link href="https://lk.easynetshop.ru/frontend/v5/ens-c72adf1c.css" rel="stylesheet">
     <title>SB Bar</title>
 </head>
 
@@ -15,13 +22,20 @@
         <div class="container">
             <ul>
                 <li> <a href="menu.html"> Меню</a></li>
-                <li><span id="our"><a href="#"> Акции</a></span> </li>
-                <li> <a href="SbBar.html"> О нас</a></li>
+                <li><span id="stock"><a href="#"> Акции</a></span> </li>
+                <!-- <li> <a href="SbBar.html"> О нас</a></li> -->
                 <a href="SbBar.html"><img src="img/log.png" alt=""></a>
                 <li> <a href="contacts.html">
                         Контакты</a></li>
-                <li> <a href="enter.html"><img src="img/Vector.png" alt=""> Войти</a></li>
-                <li><a href="karzina.html"><img src="img/karzina.png" alt=""></a></li>
+                <!-- <li> <a href="enter.html"><img src="img/Vector.png" alt=""> Войти</a></li> -->
+                <div id="easynetshop-cart">
+                    <div id="enscart_my_wrapper">
+                      <div id="enscart_myimage_wrapper">
+                        <img src="img/karzina.png">
+                      </div>
+                      <div id="enscart_my_counter_wrapper"><span  id="easynetshop-cart-count"> 0 </span></div>
+                    </div>
+                  </div>
             </ul>
         </div>
     </header>
@@ -35,10 +49,10 @@
                     <p>Описание продукта, особенности, плюсы и минусы. Описание продукта, особенности, плюсы и минусы.
                     </p>
                     <div class="price">
-                        <h4 class="sall">1000c</h4>
-                        <h4 class="onSall">500c</h4>
+                        <h4 class="sall">2500c</h4>
+                        <h4 class="onSall">1000c</h4>
                     </div>
-                    <button>В КОРЗИНУ</button>
+                    <button class="btn-ens-action" data-rel="c72adf1c255486">В КОРЗИНУ</button>
                 </div>
             </div>
             <div class="card_stock">
@@ -47,10 +61,10 @@
                     <p>Описание продукта, особенности, плюсы и минусы. Описание продукта, особенности, плюсы и минусы.
                     </p>
                     <div class="price">
-                        <h4 class="sall">1000c</h4>
-                        <h4 class="onSall">500c</h4>
+                        <h4 class="sall">2500c</h4>
+                        <h4 class="onSall">1000c</h4>
                     </div>
-                    <button>В КОРЗИНУ</button>
+                    <button class="btn-ens-action" data-rel="c72adf1c256293">В КОРЗИНУ</button>
                 </div>
                 <img src="img/foot2_1.png" alt="">
             </div>
@@ -61,10 +75,10 @@
                     <p>Описание продукта, особенности, плюсы и минусы. Описание продукта, особенности, плюсы и минусы.
                     </p>
                     <div class="price">
-                        <h4 class="sall">1000c</h4>
-                        <h4 class="onSall">500c</h4>
+                        <h4 class="sall">2500c</h4>
+                        <h4 class="onSall">1000c</h4>
                     </div>
-                    <button>В КОРЗИНУ</button>
+                    <button class="btn-ens-action" data-rel="c72adf1c256294">В КОРЗИНУ</button>
                 </div>
             </div>
             <div class="card_stock">
@@ -73,10 +87,10 @@
                     <p>Описание продукта, особенности, плюсы и минусы. Описание продукта, особенности, плюсы и минусы.
                     </p>
                     <div class="price">
-                        <h4 class="sall">1000c</h4>
-                        <h4 class="onSall">500c</h4>
+                        <h4 class="sall">2500c</h4>
+                        <h4 class="onSall">1000c</h4>
                     </div>
-                    <button>В КОРЗИНУ</button>
+                    <button class="btn-ens-action" data-rel="c72adf1c256296">В КОРЗИНУ</button>
                 </div>
                 <img src="img/foot3.png" alt="">
             </div>
@@ -87,10 +101,10 @@
                     <p>Описание продукта, особенности, плюсы и минусы. Описание продукта, особенности, плюсы и минусы.
                     </p>
                     <div class="price">
-                        <h4 class="sall">1000c</h4>
-                        <h4 class="onSall">500c</h4>
+                        <h4 class="sall">2500c</h4>
+                        <h4 class="onSall">1000c</h4>
                     </div>
-                    <button>В КОРЗИНУ</button>
+                    <button class="btn-ens-action" data-rel="c72adf1c256295">В КОРЗИНУ</button>
                 </div>
             </div>
             <div class="card_stock">
@@ -99,10 +113,10 @@
                     <p>Описание продукта, особенности, плюсы и минусы. Описание продукта, особенности, плюсы и минусы.
                     </p>
                     <div class="price">
-                        <h4 class="sall">1000c</h4>
-                        <h4 class="onSall">500c</h4>
+                        <h4 class="sall">2500 c</h4>
+                        <h4 class="onSall">1000 c</h4>
                     </div>
-                    <button>В КОРЗИНУ</button>
+                    <button class="btn-ens-action" data-rel="c72adf1c256297">В КОРЗИНУ</button>
                 </div>
                 <img src="img/foot5.png" alt="">
             </div>
@@ -111,7 +125,7 @@
     <footer>
         <div class="container">
             <div class="FooterFlex">
-                <img src="img/logo1.png" alt="">
+                <img src="img/logo1.svg" alt="">
                 <div class="workTime">
                     <p>Режим работы</p>
                     <p>с 10:00 до 20:00</p>

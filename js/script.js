@@ -1,11 +1,4 @@
-// var map;
 
-// DG.then(function () {
-//     map = DG.map('map', {
-//         center: [],
-//         zoom: 13
-//     });
-// });
 
 var map;
 DG.then(function () {
@@ -14,3 +7,9 @@ DG.then(function () {
         zoom: 13
     });
 });
+
+function alert() {
+    document.getElementById("oform").innerHTML = "Заказ оформлен!";
+  }
+
+  

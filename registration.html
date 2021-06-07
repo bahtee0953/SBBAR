@@ -16,19 +16,19 @@
         <div class="block_center">
             <a href="enter.html"> Вход</a>
             <a href="registration.html" id="registr">Регистрация</a>
-            <p>Ваша электронна почта</p>
-            <input type="text" class="text" placeholder="Введите ваш адрес эл. почты">
-            <p>Ваше имя</p>
-            <input type="text" class="text" placeholder="Введите ваше имя">
-            <p>Ваша фомилия</p>
-            <input type="text" class="text" placeholder="Введите вашу фамилию">
-            <p>Ваш телефон</p>
-            <input type="number" class="text" placeholder="Введите ваш телефон">
-            <p>Ваша пароль</p>
-            <input type="text" class="text" placeholder="Введите ваш пароль">
-            <p>Введите повторный пароль</p>
-            <input type="password" class="pas" placeholder="Введите ваш повтореый пароль">
-            <button>Регистрация</button>
+            <label for="email"><p>Ваша электронна почта</p></label>
+            <input type="email" name="email" required class="text" placeholder="Введите ваш адрес эл. почты">
+            <p for="user">Ваше имя</p>
+            <input type="text" name="user" required class="text" placeholder="Введите ваше имя">
+            <p for="s_user">Ваша фомилия</p>
+            <input type="text" required name="s_user" class="text" placeholder="Введите вашу фамилию">
+            <p for="num">Ваш телефон</p>
+            <input type="number" required class="text" name="num" placeholder="Введите ваш телефон">
+            <p for="psw">Ваша пароль</p>
+            <input type="password" name="psw" required class="text" placeholder="Введите ваш пароль">
+            <p for="psw-repeat">Введите повторный пароль</p>
+            <input type="password" name="psw-repeat" required class="pas" placeholder="Введите ваш повтореый пароль">
+            <button type="submit">Регистрация</button>
         </div>
     </div>
 </body>
